@@ -6,12 +6,12 @@ import "swiper/css/navigation";
 import { Navigation } from 'swiper/modules';
 import P from '../../assets/Certificates/Python.jpg'
 import S from '../../assets/Certificates/MySQL.jpg'
-import T from '../../assets/Certificates/TBR.jpg'
+import F from '../../assets/Certificates/FSWD.jpg'
 
 const certificates = [
   {
     id: 1,
-    image: T,
+    image: F,
     name: "MERN Stack Developer",
     details:
       "This certificate acknowledges my successful completion of the MERN Stack Developer course at Error Makes Clever, where I acquired expertise in MongoDB, Express.js, React.js, and Node.js, developing full-stack web applications through hands-on projects.",
