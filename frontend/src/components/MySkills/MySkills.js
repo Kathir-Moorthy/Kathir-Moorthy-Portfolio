@@ -11,17 +11,19 @@ import {
   FaNodeJs,
   FaGit,
   FaRocket,
-  FaBolt ,
+  FaBolt,
   FaFire,
   FaPython,
 } from "react-icons/fa";
 import {
+  SiTailwindcss,
   SiJavascript,
+  SiAxios,
   SiMongodb,
   SiExpress,
-  SiTailwindcss,
   SiMysql,
-  SiAxios,
+  SiPostgresql,
+  SiLinux,
 } from "react-icons/si";
 import { DiVisualstudio } from 'react-icons/di';
 import Certificates from "./Certificates";
@@ -42,12 +44,14 @@ const skillsByCategory = {
   Database: [
     { name: "MongoDB", icon: <SiMongodb />, level: 4 },
     { name: "MySQL", icon: <SiMysql />, level: 4 },
+    { name: "PostgreSQL", icon: <SiPostgresql />, level: 4 },
   ],
   Tools: [
     { name: "Git", icon: <FaGit />, level: 4 },
     { name: "VS Code", icon: <DiVisualstudio />, level: 4 },
+    { name: "Linux", icon: <SiLinux />, level: 4 },
     { name: "Vercel", icon: <FaRocket />, level: 4 },
-    { name: "Render", icon: <FaBolt  />, level: 4 },
+    { name: "Render", icon: <FaBolt />, level: 4 },
     { name: "Firebase", icon: <FaFire />, level: 4 },
     { name: "Python", icon: <FaPython />, level: 4 },
   ],
@@ -78,27 +82,24 @@ const MySkills = () => {
 
   return (
     <div
-      className={`p-10 min-h-screen transition-colors duration-300 font-roboto animate-fade-in ${
-        darkMode
-          ? "bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100"
-          : "bg-gradient-to-r from-slate-100 to-slate-200 text-gray-800"
-      }`}
+      className={`p-10 min-h-screen transition-colors duration-300 font-roboto animate-fade-in ${darkMode
+        ? "bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100"
+        : "bg-gradient-to-r from-slate-100 to-slate-200 text-gray-800"
+        }`}
     >
       <h1
-        className={`text-4xl mb-8 font-bold drop-shadow-lg text-center ${
-          darkMode ? "text-slate-400" : "text-blue-600"
-        }`}
+        className={`text-4xl mb-8 font-bold drop-shadow-lg text-center ${darkMode ? "text-slate-400" : "text-blue-600"
+          }`}
       >
         My Skills
       </h1>
       {Object.entries(skillsByCategory).map(([category, skills], index) => (
         <div key={index} className="mb-10">
           <h2
-            className={`text-2xl font-semibold mb-6 border-b-2 inline-block ${
-              darkMode
-                ? "text-slate-400 border-slate-500"
-                : "text-blue-800 border-blue-500"
-            }`}
+            className={`text-2xl font-semibold mb-6 border-b-2 inline-block ${darkMode
+              ? "text-slate-400 border-slate-500"
+              : "text-blue-800 border-blue-500"
+              }`}
           >
             {category}
           </h2>
@@ -117,23 +118,20 @@ const MySkills = () => {
             {skills.map((skill, skillIndex) => (
               <SwiperSlide key={skillIndex}>
                 <div
-                  className={`w-full text-center p-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 ${
-                    darkMode
-                      ? "bg-gray-800 hover:shadow-gray-700"
-                      : "bg-white hover:shadow-2xl"
-                  }`}
+                  className={`w-full text-center p-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 ${darkMode
+                    ? "bg-gray-800 hover:shadow-gray-700"
+                    : "bg-white hover:shadow-2xl"
+                    }`}
                 >
                   <div
-                    className={`text-5xl mb-4 animate-pulse drop-shadow-lg ${
-                      darkMode ? "text-slate-400" : "text-blue-800"
-                    }`}
+                    className={`text-5xl mb-4 animate-pulse drop-shadow-lg ${darkMode ? "text-slate-400" : "text-blue-800"
+                      }`}
                   >
                     {skill.icon}
                   </div>
                   <h3
-                    className={`text-lg mb-3 font-medium drop-shadow-md ${
-                      darkMode ? "text-slate-400" : "text-blue-800"
-                    }`}
+                    className={`text-lg mb-3 font-medium drop-shadow-md ${darkMode ? "text-slate-400" : "text-blue-800"
+                      }`}
                   >
                     {skill.name}
                   </h3>
@@ -141,13 +139,12 @@ const MySkills = () => {
                     {[...Array(5)].map((_, i) => (
                       <div
                         key={i}
-                        className={`w-5 h-2 rounded-md overflow-hidden ${
-                          i < skill.level
-                            ? darkMode
-                              ? "bg-gradient-to-r from-slate-400 to-slate-600 progress-bar"
-                              : "bg-gradient-to-r from-blue-600 to-blue-800 progress-bar"
-                            : "bg-gray-300"
-                        }`}
+                        className={`w-5 h-2 rounded-md overflow-hidden ${i < skill.level
+                          ? darkMode
+                            ? "bg-gradient-to-r from-slate-400 to-slate-600 progress-bar"
+                            : "bg-gradient-to-r from-blue-600 to-blue-800 progress-bar"
+                          : "bg-gray-300"
+                          }`}
                       >
                         {i < skill.level && (
                           <div

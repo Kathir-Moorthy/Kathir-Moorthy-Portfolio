@@ -5,6 +5,7 @@ import { DarkModeContext } from "../../common/DarkModeContext";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Pi0 from '../../assets/Proimg/Pi0.jpg';
 import Pi1 from '../../assets/Proimg/Pi1.jpg';
 import Pi2 from '../../assets/Proimg/Pi2.jpg';
 import Pi3 from '../../assets/Proimg/Pi3.jpg';
@@ -13,6 +14,7 @@ import Pi5 from '../../assets/Proimg/Pi5.jpg';
 import Pi6 from '../../assets/Proimg/Pi6.jpg';
 import Pi7 from '../../assets/Proimg/Pi7.jpg';
 import Pi8 from '../../assets/Proimg/Pi8.jpg';
+import Pv0 from '../../assets/Provid/Pv0.mp4';
 import Pv1 from '../../assets/Provid/Pv1.mp4';
 import Pv2 from '../../assets/Provid/Pv2.mp4';
 import Pv3 from '../../assets/Provid/Pv3.mp4';
@@ -23,6 +25,16 @@ import Pv7 from '../../assets/Provid/Pv7.mp4';
 import Pv8 from '../../assets/Provid/Pv8.mp4';
 
 const projectData = [
+    {
+        name: "Quantrak – Employee Attendance Tracking System",
+        image: Pi0, 
+        video: Pv0, 
+        liveDemo: "#", 
+        github: "https://github.com/Kathir-Moorthy/Quantrak",
+        description: "Quantrak is a full-stack web application developed during my internship at Quantrail Data. It streamlines employee attendance and leave management with a user-friendly interface, secure authentication, and insightful analytics.",
+        skills: ["React.js","Tailwind CSS","Node.js","Express.js","PostgreSQL","Supabase","Google OAuth","Chart.js","UI/UX Design","Responsive Design"],
+        features: ["Responsive and intuitive UI for both employees and administrators","Secure user authentication using Supabase and Google OAuth","Password recovery and protected routing for enhanced security","Attendance marking, leave application, and holiday tracking with real-time updates","Admin dashboard for onboarding, role-based access, and user management","Analytics dashboard using Chart.js for attendance trends and comparisons","Backend built with Node.js, Express.js, and PostgreSQL ensuring optimized performance","Real-time validation and feedback for smooth user interaction"]
+    },
     {
         name: "ALCABAA - Ecommerce Website",
         image: Pi1,
@@ -137,8 +149,8 @@ const ProjectPopup = ({ project, onClose, darkMode }) => {
             <div
                 ref={popupRef}
                 className={`p-6 rounded-lg max-w-lg w-full relative overflow-y-auto custom-scrollbar animate-popup-slide-in ${darkMode
-                        ? "bg-gray-800 text-gray-100"
-                        : "bg-white text-gray-800"
+                    ? "bg-gray-800 text-gray-100"
+                    : "bg-white text-gray-800"
                     }`}
                 style={{
                     maxHeight: "80%",
@@ -161,8 +173,8 @@ const ProjectPopup = ({ project, onClose, darkMode }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`px-4 py-2 rounded-lg shadow transition-transform duration-300 transform hover:scale-105 no-underline ${darkMode
-                                ? "bg-slate-500 hover:bg-slate-600 text-white"
-                                : "bg-blue-600 hover:bg-blue-700 text-white"
+                            ? "bg-slate-500 hover:bg-slate-600 text-white"
+                            : "bg-blue-600 hover:bg-blue-700 text-white"
                             }`}
                     >
                         Live Demo
@@ -172,8 +184,8 @@ const ProjectPopup = ({ project, onClose, darkMode }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`px-4 py-2 rounded-lg shadow transition-transform duration-300 transform hover:scale-105 no-underline ${darkMode
-                                ? "bg-gray-600 hover:bg-gray-700 text-gray-100"
-                                : "bg-gray-800 hover:bg-gray-900 text-white"
+                            ? "bg-gray-600 hover:bg-gray-700 text-gray-100"
+                            : "bg-gray-800 hover:bg-gray-900 text-white"
                             }`}
                     >
                         GitHub
