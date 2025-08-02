@@ -57,7 +57,7 @@ function Home() {
                     animate={inViewHero ? "visible" : "hidden"}
                     variants={fadeInVariants}
                 >
-                    Full Stack Developer | Building Future-Ready Applications
+                    Full Stack Developer | Building Scalable Web Applications
                 </motion.p>
                 <motion.div
                     className={`mt-6 w-32 h-1 rounded-full ${darkMode ? "bg-gradient-to-r from-purple-600 to-orange-600" : "bg-gradient-to-r from-blue-500 to-pink-500"
@@ -83,12 +83,12 @@ function Home() {
                         visible: { opacity: 1, x: 0, transition: { duration: 1.5 } },
                     }}
                 >
-                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? "text-white" : "text-gray-800"}`}>My Journey</h3>
+                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? "text-white" : "text-gray-800"}`}>Professional Journey</h3>
                     <p
                         className={`text-lg font-medium text-justify leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-700"
                             }`}
                     >
-                        I’m a fresher full-stack developer with hands-on internship experience, skilled in the MERN stack and PostgreSQL. Passionate about building fast, user-friendly web applications, I adapt quickly and am ready to contribute from day one.
+                        I'm a full-stack developer with professional experience building production-ready applications. Specializing in the MERN stack and PostgreSQL, I create robust, high-performance web applications with a focus on clean architecture and optimal user experiences.
                     </p>
                 </motion.div>
 
