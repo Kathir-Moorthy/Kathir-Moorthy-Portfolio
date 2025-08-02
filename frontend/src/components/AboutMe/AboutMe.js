@@ -49,7 +49,7 @@ function AboutMe() {
                 transition: { duration: 1, delay: 0.5, type: "spring", stiffness: 80 },
             },
         },
-        internship: {
+        experience: {
             hidden: { opacity: 0, x: -50 },
             visible: {
                 opacity: 1,
@@ -152,7 +152,7 @@ function AboutMe() {
                         className={`text-lg text-justify font-medium leading-relaxed mt-4 ${darkMode ? "text-gray-300" : "text-gray-700"
                             }`}
                     >
-                        I'm currently a Full Stack Developer Intern at a startup company in Chennai called{" "}
+                        I'm currently working as a Full Stack Developer at{" "}
                         <a
                             href="https://quantrail-data.com/"
                             target="_blank"
@@ -161,7 +161,7 @@ function AboutMe() {
                         >
                             Quantrail Data
                         </a>{" "}
-                        (remote internship), where I'm gaining real-world experience building scalable software solutions.
+                        where I build AI-powered customer-facing applications using modern web technologies.
                     </p>
 
                     <p
@@ -173,7 +173,7 @@ function AboutMe() {
                 </motion.div>
             </div>
 
-            {/* Internship Experience Section */}
+            {/* Experience Section */}
             <motion.div 
                 className={`w-full max-w-6xl mt-12 p-8 rounded-lg ${darkMode 
                     ? "bg-gray-800 border border-gray-700" 
@@ -181,11 +181,11 @@ function AboutMe() {
                 } shadow-lg`}
                 initial="hidden"
                 whileInView="visible"
-                variants={animations.internship}
+                variants={animations.experience}
                 viewport={{ once: true }}
             >
                 <h2 className={`text-2xl font-bold mb-6 ${darkMode ? "text-gray-100" : "text-gray-800"}`}>
-                    Internship Experience
+                    Experience
                 </h2>
                 
                 <div className={`p-6 rounded-lg ${darkMode 
@@ -194,14 +194,14 @@ function AboutMe() {
                 }`}>
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                         <h3 className={`text-xl font-semibold ${darkMode ? "text-gray-100" : "text-gray-800"}`}>
-                            Full Stack Developer Intern at Quantrail Data (Remote)
+                            Full Stack Developer at Quantrail Data
                         </h3>
                         <span className={`text-sm mt-2 md:mt-0 ${darkMode ? "text-gray-300" : "text-gray-600"}`}>
                             April 2025 - Present
                         </span>
                     </div>
                     <p className={`text-lg ${darkMode ? "text-gray-300" : "text-gray-700"}`}>
-                        As a Full Stack Developer Intern at Quantrail Data, I am building AI-powered customer-facing applications using React, Next.js, and REST APIs. My role involves developing both frontend and backend solutions, working with databases, and deploying applications in a Linux environment, while gaining hands-on experience in a dynamic startup culture.
+                        As a Full Stack Developer at Quantrail Data, I build AI-powered customer-facing applications using React, Next.js, and REST APIs. My role involves developing both frontend and backend solutions, working with databases, and deploying applications in a Linux environment.
                     </p>
                     <div className="mt-4">
                         <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${darkMode 
