@@ -156,15 +156,6 @@ function Home() {
                 }}
             >
                 <a
-                    href="https://www.instagram.com/yoitsmekat_"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`relative text-3xl md:text-4xl transition-transform duration-300 ${darkMode ? "text-pink-300 hover:text-pink-500" : "text-gray-700 hover:text-pink-500"
-                        }`}
-                >
-                    <FaInstagram />
-                </a>
-                <a
                     href="https://www.linkedin.com/in/kathir-moorthy-suresh-babu05"
                     target="_blank"
                     rel="noopener noreferrer"
