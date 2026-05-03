@@ -277,21 +277,6 @@ const ContactMe = () => {
                                 GitHub
                             </a>
                         </li>
-                        <li className="flex items-center hover:animate-hover-glow">
-                            <FaInstagram
-                                className={`text-xl mr-3 ${darkMode ? "text-[#E4405F]" : "text-pink-600"
-                                    } animate-social-glow`}
-                            />
-                            <a
-                                href="https://www.instagram.com/___kathir05___"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`text-lg font-medium no-underline hover:no-underline ${darkMode ? "text-white" : "text-blue-500"
-                                    }`}
-                            >
-                                Instagram
-                            </a>
-                        </li>
                         {/* Add Phone Number */}
                         <li className="flex items-center hover:animate-hover-glow">
                             <FaPhone
